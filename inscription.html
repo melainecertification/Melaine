@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ma page 6</title>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        footer {
+            background-color: cornflowerblue;
+            padding: 20px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">MON PROJET</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="Acceuil.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="Présentation.html">Présentation</a></li>
+                <li class="nav-item"><a class="nav-link" href="Pigier-info.html">PIGIER INFO</a></li>
+                <li class="nav-item"><a class="nav-link" href="Liste.html">Liste</a></li>
+                <li class="nav-item"><a class="nav-link" href="Filière-info.html">Filère</a></li>
+                <li class="nav-item"><a class="nav-link" href="inscription.html">Inscription</a></li>
+                <li class="nav-item"><a class="nav-link" href="curriculum-vitae.html">CV</a></li>
+               
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h2 class="text-center">Formulaire d'inscription</h2>
+        <form action="traitement.php" method="POST">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" class="form-control" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" class="form-control" id="prenom" name="prenom" required>
+            </div>
+            <div class="form-group">
+                <label for="numero_etudiant">Numéro étudiant :</label>
+                <input type="text" class="form-control" id="numero_etudiant" name="numero_etudiant" required>
+            </div>
+            <div class="form-group">
+                <label for="telephone">Numéro de téléphone :</label>
+                <input type="tel" class="form-control" id="telephone" name="telephone" required>
+            </div>
+            <div class="form-group">
+                <label for="adresse">Adresse :</label>
+                <input type="text" class="form-control" id="adresse" name="adresse" required>
+            </div>
+            <div class="form-group">
+                <label for="filiere">Choisissez votre filière :</label>
+                <select class="form-control" id="filiere" name="filiere" required>
+                    <option value="">--Sélectionnez une filière--</option>
+                    <option value="RGL">RGL</option>
+                    <option value="RMS">RMS</option>
+                    <option value="DCJ">DCJ</option>
+                    <option value="CG">CG</option>
+                    <option value="GTL">GTL</option>
+                    <option value="CDM">CDM</option>
+                    <option value="CIB">CIB</option>
+                    <option value="EGP">EGP</option>
+                    <option value="MRH">MRH</option>
+                    <option value="BF">BF</option>
+                </select>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="conditions" name="conditions" required>
+                <label class="form-check-label" for="conditions">J'accepte les <a href="#">conditions générales</a>.</label>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Soumettre</button>
+        </form>
+        <div class="mt-3">
+            <a href="Filière-info.html" class="btn btn-secondary">Retour vers info-filière</a>
+            <a href="curriculum-vitae.html" class="btn btn-secondary"> Curriculum vitea </a>
+        </div>
+    </div><br><br>
+    <footer class="text-center">
+        <p>&copy; 2024 MON PROJET. Tous droits réservés.</p>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
